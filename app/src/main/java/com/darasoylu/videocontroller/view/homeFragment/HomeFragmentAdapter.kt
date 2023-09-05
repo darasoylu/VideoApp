@@ -1,6 +1,5 @@
 package com.darasoylu.videocontroller.view.homeFragment
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +10,8 @@ import com.darasoylu.videocontroller.model.MainModel
 
 class HomeFragmentAdapter(private val videoModels: List<MainModel>) :
     RecyclerView.Adapter<HomeFragmentAdapter.HomeFragmentAdapterViewHolder>() {
+
+    private lateinit var videoAdapter: VideoAdapter
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -29,7 +30,7 @@ class HomeFragmentAdapter(private val videoModels: List<MainModel>) :
             val model = videoModels[position]
             videoGenre.text = model.genre
 
-            val videoAdapter = VideoAdapter(model.videoModels)
+            videoAdapter = VideoAdapter(model.videoModels)
             parentItemRV.adapter = videoAdapter
         }
     }

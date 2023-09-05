@@ -11,7 +11,7 @@ object VideoSource {
             videoName = "Galatasaray",
             videoDescription = "Test",
             videoImage = "https://picsum.photos/200/300",
-            videoUrl = "testVideo1.mp4",
+            videoUrl = "testVideoChess.mp4",
             videoGenre = "Pop"
         ),
         VideoModel(
@@ -19,7 +19,7 @@ object VideoSource {
             videoName = "Galatasaray",
             videoDescription = "Test",
             videoImage = "https://picsum.photos/200/300",
-            videoUrl = "testVideo1.mp4",
+            videoUrl = "testVideoChess.mp4",
             videoGenre = "Pop"
         ),
         VideoModel(
@@ -27,7 +27,7 @@ object VideoSource {
             videoName = "Galatasaray",
             videoDescription = "Test",
             videoImage = "https://picsum.photos/200/300",
-            videoUrl = "testVideo1.mp4",
+            videoUrl = "testVideoChess.mp4",
             videoGenre = "Pop"
         ),
         VideoModel(
@@ -35,7 +35,7 @@ object VideoSource {
             videoName = "Galatasaray",
             videoDescription = "Test",
             videoImage = "https://picsum.photos/200/300",
-            videoUrl = "testVideo1.mp4",
+            videoUrl = "testVideoChess.mp4",
             videoGenre = "Pop"
         ),
         VideoModel(
@@ -43,7 +43,7 @@ object VideoSource {
             videoName = "Galatasaray",
             videoDescription = "Test",
             videoImage = "https://picsum.photos/200/300",
-            videoUrl = "testVideo1.mp4",
+            videoUrl = "testVideoChess.mp4",
             videoGenre = "Pop"
         )
     )
