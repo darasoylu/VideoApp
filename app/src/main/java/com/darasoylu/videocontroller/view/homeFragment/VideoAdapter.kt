@@ -26,10 +26,11 @@ class VideoAdapter(private val videoModel: List<VideoModel>) :
     override fun onBindViewHolder(holder: VideoAdapterViewHolder, position: Int) {
         holder.binding.apply {
             videoItemImage.load(videoModel[position].videoImage)
+            videoItemName.text = videoModel[position].videoName
 
             val bundle = Bundle()
             bundle.putParcelable("videoModelBundle", videoModel[position])
-            videoItemImage.setOnClickListener {
+            videoPlayBt.setOnClickListener {
                 it.findNavController().navigate(R.id.action_homeFragment_to_videoFragment, bundle)
             }
         }

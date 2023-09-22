@@ -3,6 +3,7 @@ package com.darasoylu.videocontroller.view.videoFragment
 import android.content.pm.ActivityInfo
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,8 @@ import android.view.WindowManager
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
 import androidx.media3.exoplayer.ExoPlayer
+import androidx.navigation.fragment.findNavController
+import com.darasoylu.videocontroller.R
 import com.darasoylu.videocontroller.databinding.CustomControllerBinding
 import com.darasoylu.videocontroller.databinding.FragmentVideoBinding
 import com.darasoylu.videocontroller.model.VideoModel
@@ -41,6 +44,8 @@ class VideoFragment : Fragment() {
         bindingController = CustomControllerBinding.bind(binding.root)
         return binding.root
     }
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -83,6 +88,10 @@ class VideoFragment : Fragment() {
             }
         })
 
+        bindingController.videoFragmentBackBt.setOnClickListener {
+            findNavController().navigate(R.id.homeFragment)
+        }
+
     }
 
     private fun enterFullscreen() {
@@ -107,6 +116,8 @@ class VideoFragment : Fragment() {
     private fun setPlayer(videoUri: Uri) {
 
         player = ExoPlayer.Builder(requireContext()).build()
+
+        Log.i("Dara_1", videoUri.toString())
 
         // Build the media item.
         val mediaItem = MediaItem.fromUri(videoUri)

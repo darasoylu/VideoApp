@@ -9,9 +9,24 @@
 
     <androidx.media3.ui.PlayerView
         android:id="@+id/videoPlayer"
-        app:use_controller="true"
-        app:controller_layout_id="@layout/custom_controller"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:controller_layout_id="@layout/custom_controller"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:use_controller="true" />
+
+    <!--
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/test_RV"
+        android:background="#0FDDCA"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
