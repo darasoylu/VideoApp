@@ -6,7 +6,7 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/videoFragment"
-        android:name="com.darasoylu.videocontroller.view.videoFragment.VideoFragment"
+        android:name="com.darasoylu.videoapp.view.videoFragment.VideoFragment"
         android:label="fragment_video"
         tools:layout="@layout/fragment_video" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.darasoylu.videocontroller.view.homeFragment.HomeFragment"
+        android:name="com.darasoylu.videoapp.view.homeFragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.darasoylu.videocontroller.view.searchFragment.SearchFragment"
+        android:name="com.darasoylu.videoapp.view.searchFragment.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" >
         <action
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/videoListFragment"
-        android:name="com.darasoylu.videocontroller.view.videoListFragment.VideoListFragment"
+        android:name="com.darasoylu.videoapp.view.videoListFragment.VideoListFragment"
         android:label="fragment_video_list"
         tools:layout="@layout/fragment_video_list" >
         <action

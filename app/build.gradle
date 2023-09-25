@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.darasoylu.videocontroller'
+    namespace 'com.darasoylu.videoapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.darasoylu.videocontroller"
+        applicationId "com.darasoylu.videoapp"
         minSdk 30
         targetSdk 33
         versionCode 1
