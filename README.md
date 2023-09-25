@@ -9,7 +9,7 @@ ExoPlayer is customized with a custom controller.
 
 Movies and series come filtered using ViewPager2. (Not finished)
 
-## Libraries
+## Libraries and Features
 - Navigation
 - ExoPlayer
 - Room
